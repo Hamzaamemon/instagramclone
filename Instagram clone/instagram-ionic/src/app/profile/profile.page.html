@@ -1,0 +1,65 @@
+
+<ion-header>
+  <img src="../../assets//Instagram-Logo.png" class="logo-width">
+
+</ion-header>
+<ion-content>
+    <ion-title>{{username}}</ion-title>
+  <ion-grid class="profile-intro">
+    <ion-row>
+      <ion-col col-4>
+        <img class="profile-photo" src={{profile}}>
+      </ion-col>
+      <ion-col col-8>
+        <div class="profile-info">
+          <div class="post-count info-square">
+            <p>
+              <strong>1</strong><br>
+              <em>post</em>
+            </p>
+          </div>
+          <div class="follower-count info-square">
+            <p>
+              <strong>1532</strong><br>
+              <em>followers</em>
+            </p>
+          </div>
+          <div class="following-count info-square">
+            <p>
+              <strong>200</strong><br>
+              <em>following</em>
+            </p>
+          </div>
+        </div>
+        <div>
+          <button ion-button class="follow-button">Follow</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="more-details">
+    <p class="user-name"><strong>{{email}}</strong></p>
+    <p class="user-bio">Softwere Engineer</p>
+  </div>
+
+  <ion-segment color="primary">
+    <ion-segment-button value="posts" selected>
+      <ion-icon name="grid"></ion-icon>    
+    </ion-segment-button>
+    <ion-segment-button value="tagged">
+        <ion-icon name="contacts"></ion-icon>
+      </ion-segment-button>
+    <ion-segment-button value="bookmark">
+      <ion-icon name="bookmark"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-grid class="image-grid">
+    <ion-row class="single-row">
+      <ion-col col-4 class="single-image">
+        <img height="100%" width="100%"  src="https://picsum.photos/seed/picsum/600/300">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
